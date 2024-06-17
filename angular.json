@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MiniCalculadora": {
+    "app-empleados": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/mini-calculadora",
+            "outputPath": "dist/app-empleados",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -38,7 +38,13 @@
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.min.js"],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.slim.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              
+
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -73,10 +79,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "MiniCalculadora:build:production"
+              "buildTarget": "app-empleados:build:production"
             },
             "development": {
-              "buildTarget": "MiniCalculadora:build:development"
+              "buildTarget": "app-empleados:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +90,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "MiniCalculadora:build"
+            "buildTarget": "app-empleados:build"
           }
         },
         "test": {
@@ -109,6 +115,6 @@
     }
   },
   "cli": {
-    "analytics": "faeb1009-24b7-4842-a7ea-f8ecb8fa744d"
+    "analytics": "8869ab40-e7d7-4539-8cc5-895abdb37af3"
   }
 }
