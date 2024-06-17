@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "trabajoDirectivasApp": {
+    "primeraApp": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/trabajo-directivas-app",
+            "outputPath": "dist/primera-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "trabajoDirectivasApp:build:production"
+              "buildTarget": "primeraApp:build:production"
             },
             "development": {
-              "buildTarget": "trabajoDirectivasApp:build:development"
+              "buildTarget": "primeraApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "trabajoDirectivasApp:build"
+            "buildTarget": "primeraApp:build"
           }
         },
         "test": {
@@ -108,6 +108,6 @@
     }
   },
   "cli": {
-    "analytics": "315b00f9-8ad6-4c1c-9807-1fa9547efd94"
+    "analytics": "ffc5b37d-715e-47b7-8432-7dbdd695bc1b"
   }
 }

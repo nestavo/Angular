@@ -1,5 +1,5 @@
 {
-  "name": "trabajo-directivas-app",
+  "name": "primera-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:trabajoDirectivasApp": "node dist/trabajo-directivas-app/server/server.mjs"
+    "serve:ssr:primeraApp": "node dist/primera-app/server/server.mjs"
   },
   "private": true,
   "dependencies": {
